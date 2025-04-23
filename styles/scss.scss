@@ -1,0 +1,30 @@
+$defaultDuration: 0.3s;
+$shadowColour: rgba(0, 0, 0, 0.6);
+
+// As is often the case, some devices/browsers need additional code to get CSS to work
+// in the most desired way. These mixins are used to quickly drop in hacks for each element
+@mixin hideTapHighlightColor() {
+  //Prevent highlight colour when element is tapped
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@mixin hardwareAccel() {
+  //Improve performance on mobile/tablet devices
+  transform: translateZ(0);
+}
+
+/* Box Shadow Inset */
+.skill-item {
+  display: inline-block;
+  transition-duration: $defaultDuration;
+  transition-property: box-shadow;
+
+  box-shadow: inset 0 0 0 $shadowColour, 0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
+
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+
+  &:hover {
+    box-shadow: inset 2px 2px 2px $shadowColour, 0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
+  }
+}

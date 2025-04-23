@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmesh</title>
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- Add this in the <head> section -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://use.typekit.net/ehh4lya.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+
+    <script>
+      try {
+        Typekit.load({ async: true });
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div class="curtain">
+      <nav class="side">
+        <div class="side__inner">
+          <div class="top"><a href="#">Harmesh G V</a></div>
+          <div class="bottom">
+            <a href="https://dribbble.com/hellovolker">GITHUB</a>
+            <a href="https://twitter.com/hellovolker">TWITTER</a>
+            <a href="mailto:harmeshgopinathan@gmail.com">EMAIL ME</a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="section section--hello" id="hello">
+        <div class="section__inner">
+          <div class="block">
+            <a class="pre" href="#intro">Hello</a>
+            <h2>Hello</h2>
+            <ul class="anchornav">
+              <li>
+                <a href="#about" class="nav-link"
+                  >About me <span> Who I Am & What I Do </span></a
+                >
+              </li>
+              <li>
+                <a href="#skill" class="nav-link"
+                  >Skills <span> What I Bring to the Table </span></a
+                >
+              </li>
+              <li>
+                <a href="#experience" class="nav-link"
+                  >Experience <span> Where I've Made an Impact </span></a
+                >
+              </li>
+              <li>
+                <a href="#project" class="nav-link"
+                  >Projects <span> Building My Foundation </span></a
+                >
+              </li>
+              <li>
+                <a href="#education" class="nav-link"
+                  >Education <span> My Work in Action </span></a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="nav-link"
+                  >Contact <span> Let's Create Something Together </span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--intro" id="about">
+        <div class="section__inner">
+          <div class="block">
+            <a class="pre" href="#about">ABOUT ME</a>
+            <h2 class="animated-heading">
+              Hello, I'm Harmesh,<br />
+              a college student with <br />a strong interest in technology and
+              <br />
+              a problem-solving mindset
+            </h2>
+
+            <p class="lead">
+              See small bits of my project works on
+              <a href="https://github.com/harmeshgv" class="link">Github</a>,
+              quick thoughts on
+              <a href="https://twitter.com/hellovolker" class="link">Twitter</a
+              >, and a full resume on
+              <a href="https://www.linkedin.com/in/harmeshgv" class="link"
+                >Linkedin</a
+              >.
+            </p>
+
+            <!-- Services Section Inside Intro -->
+            <section class="service">
+              <h3 class="h3 service-title">What I'm doing</h3>
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="https://i.postimg.cc/4389jZkP/icon-design.png"
+                      alt="icon"
+                      width="40"
+                    />
+                  </div>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Machine Learning</h4>
+                    <p class="service-item-text">
+                      The most modern and high-quality design made at a
+                      professional level.
+                    </p>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png"
+                      alt="icon"
+                      width="40"
+                    />
+                  </div>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Data Science</h4>
+                    <p class="service-item-text">
+                      High-quality development of sites at the professional
+                      level.
+                    </p>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="https://i.postimg.cc/xjLdzYxZ/icon-app.png"
+                      alt="icon"
+                      width="40"
+                    />
+                  </div>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Web Dev</h4>
+                    <p class="service-item-text">
+                      Professional development of applications for iOS and
+                      Android.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--about" id="skill">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 10"
+          preserveAspectRatio="none"
+        >
+          <polygon points="100 0 100 10 0 10" />
+        </svg>
+        <div class="section__inner">
+          <div class="block">
+            <a class="pre" href="#skill">Skills</a>
+            <h2>Turning ideas into reality with code and creativity</h2>
+            <p class="lead"></p>
+          </div>
+
+          <!-- Skills Grid Container -->
+
+          <div class="skills-grid-container">
+            <div class="skill-category">
+              <h5 class="heading">AI / ML</h5>
+              <div class="skills-flex-container">
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Python</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Python</span>
+                    <span>Python</span>
+                    <span>Python</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Git/GitHub</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Git/GitHub</span>
+                    <span>Git/GitHub</span>
+                    <span>Git/GitHub</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Jenkins</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Jenkins</span>
+                    <span>Jenkins</span>
+                    <span>Jenkins</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Linux (Ubuntu)</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Linux (Ubuntu)</span>
+                    <span>Linux (Ubuntu)</span>
+                    <span>Linux (Ubuntu)</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h5 class="heading">Frontend Development</h5>
+              <div class="skills-flex-container">
+                <a href="#" class="skill-item">
+                  <span class="skill-text">HTML</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>HTML</span>
+                    <span>HTML</span>
+                    <span>HTML</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">CSS</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>CSS</span>
+                    <span>CSS</span>
+                    <span>CSS</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">React</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h5 class="heading">Backend Development</h5>
+              <div class="skills-flex-container">
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Python</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Python</span>
+                    <span>Python</span>
+                    <span>Python</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Java</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Java</span>
+                    <span>Java</span>
+                    <span>Java</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">FastAPI</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>FastAPI</span>
+                    <span>FastAPI</span>
+                    <span>FastAPI</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Flask</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Flask</span>
+                    <span>Flask</span>
+                    <span>Flask</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h5 class="heading">DevOps and Tools</h5>
+              <div class="skills-flex-container">
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Docker</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Docker</span>
+                    <span>Docker</span>
+                    <span>Docker</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Git/GitHub</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Git/GitHub</span>
+                    <span>Git/GitHub</span>
+                    <span>Git/GitHub</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Jenkins</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Jenkins</span>
+                    <span>Jenkins</span>
+                    <span>Jenkins</span>
+                  </div>
+                </a>
+                <a href="#" class="skill-item">
+                  <span class="skill-text">Linux (Ubuntu)</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Linux (Ubuntu)</span>
+                    <span>Linux (Ubuntu)</span>
+                    <span>Linux (Ubuntu)</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--clients" id="project">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 10"
+          preserveAspectRatio="none"
+        >
+          <polygon points="100 10 0 0 0 10" />
+        </svg>
+        <div class="section__inner">
+          <div class="block">
+            <a class="pre" href="#project">Projects</a>
+            <h2>
+              Building solutions to real-world problems, one idea at a time.
+            </h2>
+            <p class="lead"></p>
+          </div>
+          <article class="portfolio" data-page="portfolio">
+            <section class="projects">
+              <ul class="project-list">
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web development"
+                >
+                  <a href="#">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+
+                      <img
+                        src="https://i.postimg.cc/qRHpHMyd/project-1.jpg"
+                        alt="finance"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <h3 class="project-title">Violence Detection System</h3>
+                    <p class="project-category">Web Development</p>
+                  </a>
+                </li>
+
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web design"
+                >
+                  <a href="#">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+
+                      <img
+                        src="https://i.postimg.cc/jSJVqYsq/project-3.jpg"
+                        alt="fundo"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <h3 class="project-title">RAG-Enhanced NLP Query Engine</h3>
+                    <p class="project-category">Web Design</p>
+                  </a>
+                </li>
+
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web development"
+                >
+                  <a href="#">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+
+                      <img
+                        src="https://i.postimg.cc/Kj4q9tjc/project-7.png"
+                        alt="summary"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <h3 class="project-title">LSTM Next Word Prediction</h3>
+                    <p class="project-category">Web Development</p>
+                  </a>
+                </li>
+
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="applications"
+                >
+                  <a href="#">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+
+                      <img
+                        src="public\project_images\web-basket.png"
+                        alt="task manager"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <h3 class="project-title">Grocery basket</h3>
+                    <p class="project-category">Applications</p>
+                  </a>
+                </li>
+
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web development"
+                >
+                  <a href="#">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+
+                      <img
+                        src="public\project_images\s.png"
+                        alt="arrival"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <h3 class="project-title">construction firm website</h3>
+                    <p class="project-category">Web Development</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--portfolio1" id="education">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+        </svg>
+        <div class="section__inner">
+          <div class="block">
+            <a class="pre" href="#education">Experience</a>
+            <h2>Real-world challenges taught me what code alone couldn’t.</h2>
+            <p class="lead">
+              Description of your first project or portfolio item.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-1 timeline-container">
+          <div class="timeline">
+            <div
+              class="timeline-item"
+              data-text="SDE Intern | Cloud It Solutions | Python, PyTorch, TensorFlow, GANs, MLPs"
+            >
+              <div class="timeline__content">
+                <h2 class="timeline__content-title">1881</h2>
+                <p class="timeline__content-desc">
+                  He was born in 1881 (probably in the spring) in Salonica, then
+                  an Ottoman city, now in Greece. His father Ali Riza, a customs
+                  official turned lumber merchant, died when Mustafa was still a
+                  boy. His mother Zubeyde, a devout and strong-willed woman,
+                  raised him and his sister.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item" data-text="FATHER OF THE TURKS">
+              <div class="timeline__content">
+                <h2 class="timeline__content-title">1908</h2>
+                <p class="timeline__content-desc">
+                  In 1908 he helped the group of officers who toppled the
+                  Sultan. Mustafa Kemal's career flourished as he won his
+                  heroism in the far corners of the Ottoman Empire, including
+                  Albania and Tripoli. He also briefly served as a staff officer
+                  in Salonica and Istanbul and as a military attache in Sofia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--portfolio" id="education">
+        <div class="section__inner">
+          <div class="block">
+            <a class="pre" href="#contact">Education</a>
+            <h2>
+              Rooted in strong fundamentals, growing through real-world
+              application.
+            </h2>
+            <p class="lead">
+              Description of your second project or educational background.
+            </p>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="100"
+          viewBox="0 0 100 102"
+          preserveAspectRatio="none"
+          class="bottom"
+        >
+          <path d="M0 0 L50 100 L100 0 Z"></path>
+        </svg>
+      </section>
+
+      <section class="section section--contact" id="contact">
+        <div class="section__inner">
+          <div class="block">
+            <a class="pre" href="#contact">Get in touch</a>
+            <h2>
+              For work inquiries<br />please email:<br />
+              <span
+                ><a href="mailto:harmeshgopinathan@gmail.com"
+                  >harmeshgopinathan@gmail.com</a
+                ></span
+              >
+            </h2>
+            <section class="mapbox" data-mapbox>
+              <figure>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.1313115539!2d80.04386084350367!3d13.047473316963913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1745175306772!5m2!1sen!2sin"
+                  width="600"
+                  height="600"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </figure>
+            </section>
+            <p class="lead">
+              More links:
+              <a href="https://dribbble.com/hellovolker">Github</a>,
+              <a href="https://twitter.com/hellovolker">Twitter</a>, and
+              <a href="https://www.linkedin.com/in/ottovolker">Linkedin</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      // Wait for everything to load
+      window.addEventListener("load", function () {
+        // Animation for the heading
+        const heading = document.querySelector(".animated-heading");
+        if (heading) {
+          const lines = heading.querySelectorAll(".line");
+          lines.forEach((line) => {
+            line.style.transform = "translateY(20px)";
+            line.style.opacity = "0";
+            line.style.transition = "none"; // Disable transitions initially
+          });
+
+          const headingObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  lines.forEach((line, index) => {
+                    // Apply transitions and trigger animation
+                    line.style.transition = `transform 0.8s ${
+                      index * 0.2
+                    }s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.6s ${
+                      index * 0.2
+                    }s ease-out`;
+                    line.style.transform = "translateY(0)";
+                    line.style.opacity = "1";
+                  });
+                  headingObserver.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.2, rootMargin: "0px 0px -100px 0px" }
+          );
+
+          headingObserver.observe(heading);
+        }
+
+        // Animation for timeline items
+        const timelineContainer = document.querySelector(".timeline-container");
+        if (timelineContainer) {
+          const timelineItems = document.querySelectorAll(".timeline-item");
+
+          const timelineObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  timelineItems.forEach((item, index) => {
+                    setTimeout(() => {
+                      item.classList.add("timeline-item--active");
+                    }, index * 200);
+                  });
+                  timelineObserver.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.1 }
+          );
+
+          timelineObserver.observe(timelineContainer);
+        }
+      });
+
+      // Marquee text effect
+      document.querySelectorAll(".btn-skill").forEach((button) => {
+        const text = button.textContent.trim();
+        button.setAttribute(
+          "data-text",
+          `${text} • ${text} • ${text} • ${text}`
+        );
+        button.innerHTML = `<span>${text}</span>`;
+      });
+
+      // Service items animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const serviceSection = document.querySelector(".section--about");
+        const serviceItems = document.querySelectorAll(".service-item");
+
+        if (serviceSection && serviceItems.length) {
+          const serviceObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  serviceItems.forEach((item) => {
+                    item.classList.add("animate");
+                  });
+                  serviceObserver.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.1 }
+          );
+
+          serviceObserver.observe(serviceSection);
+        }
+      });
+    </script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      const heading = document.querySelector(".animated-heading");
+      const split = new SplitText(heading, { type: "words" });
+      const words = split.words;
+
+      gsap.from(words, {
+        yPercent: 100,
+        opacity: 0,
+        stagger: 0.1,
+        ease: "circ.out",
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: heading,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      });
+    </script>
+  </body>
+</html>
