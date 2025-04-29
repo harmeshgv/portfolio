@@ -969,8 +969,7 @@ p a:hover {
   transition: 0.9s ease 0s;
   background-attachment: fixed;
   background-size: cover;
-  scroll-margin-top: 100px; 
-  scroll-snap-align: start;
+
 }
 .timeline-container:before {
   position: absolute;
