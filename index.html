@@ -3,19 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Harmesh</title>
+
     <link rel="stylesheet" href="styles/main.css" />
 
-    <!-- Add this in the <head> section -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://use.typekit.net/ehh4lya.js"></script>
-
     <script>
       try {
         Typekit.load({ async: true });
       } catch (e) {}
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <div class="curtain">
       <nav class="side">
@@ -29,58 +36,94 @@
         </div>
       </nav>
 
-      <section class="section section--hello" id="hello">
-        <div class="section__inner">
-          <div class="block">
-            <a class="pre" href="#intro">Hello</a>
-            <h2>Hello</h2>
-            <ul class="anchornav">
-              <li>
-                <a href="#about" class="nav-link"
-                  >About me <span> Who I Am & What I Do </span></a
-                >
-              </li>
-              <li>
-                <a href="#skill" class="nav-link"
-                  >Skills <span> What I Bring to the Table </span></a
-                >
-              </li>
-              <li>
-                <a href="#experience" class="nav-link"
-                  >Experience <span> Where I've Made an Impact </span></a
-                >
-              </li>
-              <li>
-                <a href="#project" class="nav-link"
-                  >Projects <span> Building My Foundation </span></a
-                >
-              </li>
-              <li>
-                <a href="#education" class="nav-link"
-                  >Education <span> My Work in Action </span></a
-                >
-              </li>
-              <li>
-                <a href="#contact" class="nav-link"
-                  >Contact <span> Let's Create Something Together </span></a
-                >
-              </li>
-            </ul>
+      <section class="home-page" id="hello">
+        <div class="stagePerspective">
+          <button class="theme-toggle" id="themeToggle">
+            Toggle Dark Mode
+          </button>
+
+          <div class="stageContainer">
+            <div class="stage">
+              <ul class="projects">
+                <li class="projectsLi" data-section="about">
+                  <div class="projectContainer">
+                    <a href="#about" data-info="Profile" class="nav-link"
+                      >About</a
+                    >
+                  </div>
+                </li>
+                <li class="projectsLi" data-section="skills">
+                  <div class="projectContainer">
+                    <a href="#skills" data-info="Expertise" class="nav-link"
+                      >Skills</a
+                    >
+                  </div>
+                </li>
+                <li class="projectsLi" data-section="experience">
+                  <div class="projectContainer">
+                    <a href="#experience" data-info="Journey" class="nav-link"
+                      >Experience</a
+                    >
+                  </div>
+                </li>
+                <li class="projectsLi" data-section="projects">
+                  <div class="projectContainer">
+                    <a href="#projects" data-info="Portfolio" class="nav-link"
+                      >Projects</a
+                    >
+                  </div>
+                </li>
+                <li class="projectsLi" data-section="education">
+                  <div class="projectContainer">
+                    <a href="#education" data-info="Background" class="nav-link"
+                      >Education</a
+                    >
+                  </div>
+                </li>
+                <li class="projectsLi" data-section="certifications">
+                  <div class="projectContainer">
+                    <a
+                      href="#certifications"
+                      data-info="Credentials"
+                      class="nav-link"
+                      >Certification</a
+                    >
+                  </div>
+                </li>
+                <li class="projectsLi" data-section="achievements">
+                  <div class="projectContainer">
+                    <a
+                      href="#achievements"
+                      data-info="Milestones"
+                      class="nav-link"
+                      >Achievements</a
+                    >
+                  </div>
+                </li>
+                <li class="projectsLi" data-section="contact">
+                  <div class="projectContainer">
+                    <a href="#contact" data-info="Connect" class="nav-link"
+                      >Contact</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section--intro" id="about">
+      <section class="section section--about" id="about">
         <div class="section__inner">
           <div class="block">
             <a class="pre" href="#about">ABOUT ME</a>
+
             <h2 class="animated-heading">
               Hello, I'm Harmesh,<br />
-              a college student with <br />a strong interest in technology and
-              <br />
+              a college student with <br />
+              a strong interest in technology and<br />
               a problem-solving mindset
             </h2>
-
             <p class="lead">
               See small bits of my project works on
               <a href="https://github.com/harmeshgv" class="link">Github</a>,
@@ -88,7 +131,7 @@
               <a href="https://twitter.com/hellovolker" class="link">Twitter</a
               >, and a full resume on
               <a href="https://www.linkedin.com/in/harmeshgv" class="link"
-                >Linkedin</a
+                >LinkedIn</a
               >.
             </p>
 
@@ -97,50 +140,52 @@
               <h3 class="h3 service-title">What I'm doing</h3>
               <ul class="service-list">
                 <li class="service-item">
-                  <div class="service-icon-box">
+                  <div class="service-icon-box permanet-inset">
                     <img
                       src="https://i.postimg.cc/4389jZkP/icon-design.png"
-                      alt="icon"
+                      alt="Machine Learning Icon"
                       width="40"
                     />
                   </div>
                   <div class="service-content-box">
                     <h4 class="h4 service-item-title">Machine Learning</h4>
                     <p class="service-item-text">
-                      The most modern and high-quality design made at a
-                      professional level.
+                      Building intelligent systems with modern techniques and
+                      clean designs.
                     </p>
                   </div>
                 </li>
+
                 <li class="service-item">
                   <div class="service-icon-box">
                     <img
                       src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png"
-                      alt="icon"
+                      alt="Data Science Icon"
                       width="40"
                     />
                   </div>
                   <div class="service-content-box">
                     <h4 class="h4 service-item-title">Data Science</h4>
                     <p class="service-item-text">
-                      High-quality development of sites at the professional
-                      level.
+                      Extracting insights from data using statistical and
+                      analytical techniques.
                     </p>
                   </div>
                 </li>
+
                 <li class="service-item">
                   <div class="service-icon-box">
                     <img
                       src="https://i.postimg.cc/xjLdzYxZ/icon-app.png"
-                      alt="icon"
+                      alt="Web Development Icon"
                       width="40"
                     />
                   </div>
                   <div class="service-content-box">
-                    <h4 class="h4 service-item-title">Web Dev</h4>
+                    <h4 class="h4 service-item-title">Web Development</h4>
                     <p class="service-item-text">
-                      Professional development of applications for iOS and
-                      Android.
+                      Designing and developing responsive, dynamic websites and
+                      apps.
                     </p>
                   </div>
                 </li>
@@ -150,14 +195,7 @@
         </div>
       </section>
 
-      <section class="section section--about" id="skill">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 10"
-          preserveAspectRatio="none"
-        >
-          <polygon points="100 0 100 10 0 10" />
-        </svg>
+      <section class="section section--skill" id="skills">
         <div class="section__inner">
           <div class="block">
             <a class="pre" href="#skill">Skills</a>
@@ -166,300 +204,344 @@
           </div>
 
           <!-- Skills Grid Container -->
-
           <div class="skills-grid-container">
+            <!-- Machine Learning -->
             <div class="skill-category">
-              <h5 class="heading">AI / ML</h5>
+              <h5 class="skill-heading">Machine Learning</h5>
               <div class="skills-flex-container">
-                <a href="#" class="skill-item">
+                <!-- Skill Items -->
+                <div class="skill-item">
+                  <span class="skill-icon">
+                    <img src="public/skill_images/python.png" alt="Python" />
+                  </span>
                   <span class="skill-text">Python</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>Python</span>
-                    <span>Python</span>
-                    <span>Python</span>
+                    <span>Python</span><span>Python</span><span>Python</span>
                   </div>
-                </a>
-                <a href="#" class="skill-item">
-                  <span class="skill-text">Git/GitHub</span>
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon">
+                    <img src="public/skill_images/pandas.svg" alt="Pandas" />
+                  </span>
+                  <span class="skill-text">Pandas</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>Git/GitHub</span>
-                    <span>Git/GitHub</span>
-                    <span>Git/GitHub</span>
+                    <span>Pandas</span><span>Pandas</span><span>Pandas</span>
                   </div>
-                </a>
-                <a href="#" class="skill-item">
-                  <span class="skill-text">Jenkins</span>
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon">
+                    <img src="public/skill_images/numpy.svg" alt="Numpy" />
+                  </span>
+                  <span class="skill-text">Numpy</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>Jenkins</span>
-                    <span>Jenkins</span>
-                    <span>Jenkins</span>
+                    <span>Numpy</span><span>Numpy</span><span>Numpy</span>
                   </div>
-                </a>
-                <a href="#" class="skill-item">
-                  <span class="skill-text">Linux (Ubuntu)</span>
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon">
+                    <img src="public/skill_images/mysql.svg" alt="MySQL" />
+                  </span>
+                  <span class="skill-text">MySQL</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>Linux (Ubuntu)</span>
-                    <span>Linux (Ubuntu)</span>
-                    <span>Linux (Ubuntu)</span>
+                    <span>MySQL</span><span>MySQL</span><span>MySQL</span>
                   </div>
-                </a>
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon">
+                    <img src="public/skill_images/oracle.svg" alt="Oracle" />
+                  </span>
+                  <span class="skill-text">Oracle</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Oracle</span><span>Oracle</span><span>Oracle</span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon">
+                    <img
+                      src="public/skill_images/matplotlib.svg"
+                      alt="Matplotlib"
+                    />
+                  </span>
+                  <span class="skill-text">Matplotlib</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Matplotlib</span><span>Matplotlib</span
+                    ><span>Matplotlib</span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon">
+                    <img src="public/skill_images/tableau.svg" alt="Tableau" />
+                  </span>
+                  <span class="skill-text">Tableau</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>Tableau</span><span>Tableau</span><span>Tableau</span>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Frontend Development -->
             <div class="skill-category">
-              <h5 class="heading">Frontend Development</h5>
+              <h5 class="skill-heading">Frontend Development</h5>
               <div class="skills-flex-container">
-                <a href="#" class="skill-item">
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img src="public/skill_images/html.svg" alt="HTML" />
+                  </span>
                   <span class="skill-text">HTML</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>HTML</span>
-                    <span>HTML</span>
-                    <span>HTML</span>
+                    <span>HTML</span><span>HTML</span><span>HTML</span>
                   </div>
-                </a>
-                <a href="#" class="skill-item">
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img src="public/skill_images/css.svg" alt="CSS" />
+                  </span>
                   <span class="skill-text">CSS</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>CSS</span>
-                    <span>CSS</span>
-                    <span>CSS</span>
+                    <span>CSS</span><span>CSS</span><span>CSS</span>
                   </div>
-                </a>
-                <a href="#" class="skill-item">
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img src="public/skill_images/react.svg" alt="React" />
+                  </span>
                   <span class="skill-text">React</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>React</span>
-                    <span>React</span>
-                    <span>React</span>
+                    <span>React</span><span>React</span><span>React</span>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
 
+            <!-- Backend Development -->
             <div class="skill-category">
-              <h5 class="heading">Backend Development</h5>
+              <h5 class="skill-heading">Backend Development</h5>
               <div class="skills-flex-container">
-                <a href="#" class="skill-item">
-                  <span class="skill-text">Python</span>
-                  <div class="skill-marquee" aria-hidden="true">
-                    <span>Python</span>
-                    <span>Python</span>
-                    <span>Python</span>
-                  </div>
-                </a>
-                <a href="#" class="skill-item">
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img src="public/skill_images/java.svg" alt="Java" />
+                  </span>
                   <span class="skill-text">Java</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>Java</span>
-                    <span>Java</span>
-                    <span>Java</span>
+                    <span>Java</span><span>Java</span><span>Java</span>
                   </div>
-                </a>
-                <a href="#" class="skill-item">
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img
+                      src="public/skill_images/fastapi-1.svg"
+                      alt="FastAPI"
+                    />
+                  </span>
                   <span class="skill-text">FastAPI</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>FastAPI</span>
-                    <span>FastAPI</span>
-                    <span>FastAPI</span>
+                    <span>FastAPI</span><span>FastAPI</span><span>FastAPI</span>
                   </div>
-                </a>
-                <a href="#" class="skill-item">
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img src="public/skill_images/Flask.svg" alt="Flask" />
+                  </span>
                   <span class="skill-text">Flask</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>Flask</span>
-                    <span>Flask</span>
-                    <span>Flask</span>
+                    <span>Flask</span><span>Flask</span><span>Flask</span>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
 
+            <!-- DevOps and Tools -->
             <div class="skill-category">
-              <h5 class="heading">DevOps and Tools</h5>
+              <h5 class="skill-heading">DevOps and Tools</h5>
               <div class="skills-flex-container">
-                <a href="#" class="skill-item">
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img src="public/skill_images/docker.svg" alt="Docker" />
+                  </span>
                   <span class="skill-text">Docker</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>Docker</span>
-                    <span>Docker</span>
-                    <span>Docker</span>
+                    <span>Docker</span><span>Docker</span><span>Docker</span>
                   </div>
-                </a>
-                <a href="#" class="skill-item">
-                  <span class="skill-text">Git/GitHub</span>
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img src="public/skill_images/git.svg" alt="Git" />
+                  </span>
+                  <span class="skill-text">Git</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>Git/GitHub</span>
-                    <span>Git/GitHub</span>
-                    <span>Git/GitHub</span>
+                    <span>Git</span><span>Git</span><span>Git</span>
                   </div>
-                </a>
-                <a href="#" class="skill-item">
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img src="public/skill_images/github.svg" alt="GitHub" />
+                  </span>
+                  <span class="skill-text">GitHub</span>
+                  <div class="skill-marquee" aria-hidden="true">
+                    <span>GitHub</span><span>GitHub</span><span>GitHub</span>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img src="public/skill_images/jenkins.png" alt="Jenkins" />
+                  </span>
                   <span class="skill-text">Jenkins</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>Jenkins</span>
-                    <span>Jenkins</span>
-                    <span>Jenkins</span>
+                    <span>Jenkins</span><span>Jenkins</span><span>Jenkins</span>
                   </div>
-                </a>
-                <a href="#" class="skill-item">
+                </div>
+
+                <div class="skill-item">
+                  <span class="skill-icon" id="white">
+                    <img src="public/skill_images/linux.png" alt="Linux" />
+                  </span>
                   <span class="skill-text">Linux (Ubuntu)</span>
                   <div class="skill-marquee" aria-hidden="true">
-                    <span>Linux (Ubuntu)</span>
-                    <span>Linux (Ubuntu)</span>
-                    <span>Linux (Ubuntu)</span>
+                    <span>Linux (Ubuntu)</span><span>Linux (Ubuntu)</span
+                    ><span>Linux (Ubuntu)</span>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="container">
+          <div class="button-d">
+            <button class="download-button" id="resume-download">
+              <span class="download-text">Download CV</span>
+            </button>
+          </div>
+        </div>
       </section>
-      <section class="section section--clients" id="project">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 10"
-          preserveAspectRatio="none"
-        >
-          <polygon points="100 10 0 0 0 10" />
-        </svg>
+
+      <section class="section section--project" id="projects">
         <div class="section__inner">
           <div class="block">
             <a class="pre" href="#project">Projects</a>
             <h2>
               Building solutions to real-world problems, one idea at a time.
             </h2>
-            <p class="lead"></p>
           </div>
-          <article class="portfolio" data-page="portfolio">
-            <section class="projects">
-              <ul class="project-list">
-                <li
-                  class="project-item active"
-                  data-filter-item
-                  data-category="web development"
-                >
-                  <a href="#">
-                    <figure class="project-img">
-                      <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </div>
 
-                      <img
-                        src="https://i.postimg.cc/qRHpHMyd/project-1.jpg"
-                        alt="finance"
-                        loading="lazy"
-                      />
-                    </figure>
+          <ul class="project-card-list">
+            <!-- Project 1 -->
+            <li class="project-card permanent-inset">
+              <div
+                class="project-card-image"
+                data-image-full="./public/project_images/health.png"
+              >
+                <img
+                  src="./public/project_images/health.png"
+                  loading="lazy"
+                  alt="Grocery Basket Project"
+                  height="300px"
+                />
+              </div>
+              <div class="project-card-description">
+                <div class="project-title">Web HealthCare</div>
 
-                    <h3 class="project-title">Violence Detection System</h3>
-                    <p class="project-category">Web Development</p>
-                  </a>
-                </li>
+                <div class="project-technologies">
+                  <strong>Technologies Used:</strong> PyTorch, OpenCV,
+                  TensorFlow, BeautifulSoup, Hugging Face
+                </div>
 
-                <li
-                  class="project-item active"
-                  data-filter-item
-                  data-category="web design"
-                >
-                  <a href="#">
-                    <figure class="project-img">
-                      <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </div>
+                <div class="project-duration">
+                  <strong>Duration:</strong> Aug’ 24 - Oct’ 24
+                </div>
 
-                      <img
-                        src="https://i.postimg.cc/jSJVqYsq/project-3.jpg"
-                        alt="fundo"
-                        loading="lazy"
-                      />
-                    </figure>
+                <div class="project-highlights">
+                  <strong>Project Highlights:</strong>
+                  <div class="highlight-item">
+                    Developed a ResNet-based deep learning model for skin
+                    disease classification, achieving 92% accuracy across 10+
+                    conditions.
+                  </div>
+                  <div class="highlight-item">
+                    Implemented real-time multi-class classification for
+                    AI-driven diagnostic recommendations, processing 50+
+                    images/min.
+                  </div>
+                  <div class="highlight-item">
+                    Automated web scraping of 500+ disease records from Mayo
+                    Clinic, including disease causes, effects, and prevention
+                    measures.
+                  </div>
+                  <div class="highlight-item">
+                    Integrated RAG model for symptom-to-disease matching,
+                    achieving 98% precision in providing causes, effects, and
+                    prevention.
+                  </div>
+                </div>
+              </div>
+            </li>
 
-                    <h3 class="project-title">RAG-Enhanced NLP Query Engine</h3>
-                    <p class="project-category">Web Design</p>
-                  </a>
-                </li>
-
-                <li
-                  class="project-item active"
-                  data-filter-item
-                  data-category="web development"
-                >
-                  <a href="#">
-                    <figure class="project-img">
-                      <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </div>
-
-                      <img
-                        src="https://i.postimg.cc/Kj4q9tjc/project-7.png"
-                        alt="summary"
-                        loading="lazy"
-                      />
-                    </figure>
-
-                    <h3 class="project-title">LSTM Next Word Prediction</h3>
-                    <p class="project-category">Web Development</p>
-                  </a>
-                </li>
-
-                <li
-                  class="project-item active"
-                  data-filter-item
-                  data-category="applications"
-                >
-                  <a href="#">
-                    <figure class="project-img">
-                      <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </div>
-
-                      <img
-                        src="public\project_images\web-basket.png"
-                        alt="task manager"
-                        loading="lazy"
-                      />
-                    </figure>
-
-                    <h3 class="project-title">Grocery basket</h3>
-                    <p class="project-category">Applications</p>
-                  </a>
-                </li>
-
-                <li
-                  class="project-item active"
-                  data-filter-item
-                  data-category="web development"
-                >
-                  <a href="#">
-                    <figure class="project-img">
-                      <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </div>
-
-                      <img
-                        src="public\project_images\s.png"
-                        alt="arrival"
-                        loading="lazy"
-                      />
-                    </figure>
-
-                    <h3 class="project-title">construction firm website</h3>
-                    <p class="project-category">Web Development</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </article>
+            <!-- Project 2 -->
+            <li class="project-card permanent-inset">
+              <div class="project-card-image">
+                <video width="640" height="360" controls autoplay loop muted>
+                  <source
+                    src="./public/project_images/vvv.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="project-card-description">
+                <div class="project-title">Video Classification Project</div>
+                <div class="project-technologies">
+                  <strong>Technologies Used:</strong> PyTorch, YOLOv8, LSTM,
+                  CUDA, GNNs (PyG)
+                </div>
+                <div class="project-duration">
+                  <strong>Duration:</strong> Feb 25 - Present
+                </div>
+                <div class="project-highlights">
+                  <strong>Project Highlights:</strong>
+                  <div class="highlight-item">
+                    Achieved real-time 30+ FPS pose extraction by optimizing
+                    YOLOv8 with Torch-TensorRT and FP16 mixed precision.
+                  </div>
+                  <div class="highlight-item">
+                    Implemented multi-person key point tracking (17 COCO
+                    points/frame) with IoU-based ID matching for temporal
+                    consistency.
+                  </div>
+                  <div class="highlight-item">
+                    Built real-time multi-person interaction analysis
+                    (Euclidean/motion + YOLO weapon detection) with 98% pose
+                    accuracy.
+                  </div>
+                  <div class="highlight-item">
+                    Optimized CUDA memory with automatic cache management and
+                    cuDNN benchmarking for sustained high throughput.
+                  </div>
+                  <div class="highlight-item">
+                    Transformed pose sequences into temporal graph data (PyG)
+                    for GNN-based violence detection over 5-frame sliding
+                    windows.
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section class="section section--portfolio1" id="education">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-        >
-          <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
-        </svg>
+      <section class="section section--experience" id="experience">
         <div class="section__inner">
           <div class="block">
             <a class="pre" href="#education">Experience</a>
@@ -471,12 +553,15 @@
           <div class="timeline">
             <div
               class="timeline-item"
-              data-text="SDE Intern | Cloud It Solutions | Python, PyTorch, TensorFlow, GANs, MLPs"
+              data-text="Python, PyTorch, TensorFlow, GANs, MLPs"
             >
               <div class="timeline__content">
-                <h2 class="timeline__content-title">SDE Intern</h2>
+                <h2 class="timeline__content-title">
+                  Software Development Intern
+                </h2>
                 <p class="timeline__content-desc">
-                  Jun’ 22 – Jul’ 23 <br />Built a Generative Adversarial Network
+                  Cloud It Solutions<br />
+                  Jun’ 22 – Jul’ 22 <br />Built a Generative Adversarial Network
                   (GAN) to generate realistic 28x28 images using adversarial
                   training
                 </p>
@@ -484,14 +569,15 @@
             </div>
             <div
               class="timeline-item"
-              data-text="Six Square Builders | JavaScript, React.js, Web Hosting    "
+              data-text="JavaScript, React.js, Web Hosting    "
             >
               <div class="timeline__content">
                 <h2 class="timeline__content-title">
                   Freelance Frontend Developer
                 </h2>
                 <p class="timeline__content-desc">
-                  Nov’ 24 - Feb’ 24<br />Designed and developed a full-scale
+                  Six Square Builders<br />
+                  Nov’ 24 - Feb’ 25<br />Designed and developed a full-scale
                   business website from scratch using JavaScript and React.js,
                   enhancing brand presence.
                 </p>
@@ -501,7 +587,7 @@
         </div>
       </section>
 
-      <section class="section section--portfolio" id="education">
+      <section class="section section--education" id="education">
         <div class="section__inner">
           <div class="block">
             <a class="pre" href="#contact">Education</a>
@@ -509,29 +595,299 @@
               Rooted in strong fundamentals, growing through real-world
               application.
             </h2>
-            <p class="lead">
-              Lovely Professional University, Punjab <div class="dates">Aug’ 22 - Present</div> Bachelor
-              of Technology in Computer Science and Engineering |
-              Specialization: Data Science & Machine Learning – 7.61 cgpa
-              <br \ />              <br \ />
-
-              Sri Chaitanya Techno School, Chennai Intermediate - 87% | PCM
-              (Physics, Chemistry, Math) stream <div class="dates">Apr’ 21 - Mar’ 22</div>
-              <br \ />Matriculation - 82% Apr’ 19 - Mar’ 20
-            </p>
           </div>
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="100%"
-          height="100"
-          viewBox="0 0 100 102"
-          preserveAspectRatio="none"
-          class="bottom"
-        >
-          <path d="M0 0 L50 100 L100 0 Z"></path>
-        </svg>
+
+        <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic"
+          rel="stylesheet"
+          type="text/css"
+        />
+
+        <div class="timeline-1 timeline-container">
+          <div class="timeline">
+            <div
+              class="timeline-item"
+              data-text="B.Tech CSE (ML & DS Specialization) | Lovely Professional University"
+            >
+              <div class="timeline__content">
+                <h2 class="timeline__content-title">B.Tech Computer Science</h2>
+                <p class="timeline__content-desc">
+                  Aug 2022 - Aug 2026 (Expected)<br />
+                  Specialization: Machine Learning & Data Science<br />
+                  Lovely Professional University, Punjab
+                </p>
+              </div>
+            </div>
+            <div
+              class="timeline-item"
+              data-text="Sri Chiatanya Techno School (PCM)"
+            >
+              <div class="timeline__content">
+                <h2 class="timeline__content-title">Higher Secondary</h2>
+                <p class="timeline__content-desc">
+                  April 2021 - March 2022<br />
+                  Sri Chiatanya, Chennai.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item" data-text="Sri Chiatanya Techno School">
+              <div class="timeline__content">
+                <h2 class="timeline__content-title">Secondary</h2>
+                <p class="timeline__content-desc">
+                  April 2019 - March 2024<br />
+                  Sri Chaitanya, Chennai.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--certification" id="certifications">
+        <div class="section__inner">
+          <div class="block">
+            <a class="pre" href="#project">Certifications</a>
+            <h2>
+              Building solutions to real-world problems, one idea at a time.
+            </h2>
+            <p class="lead"></p>
+          </div>
+          <section id="certification-section">
+            <div class="certification-section-content">
+              <!-- Restaurant Card 1 -->
+              <div class="certification-card">
+                <img
+                  src="public/certification_images/Devops.jpeg"
+                  ,
+                  class="certification-image"
+                  ,
+                  alt="img"
+                />
+                <div class="certification-card-content">
+                  <div class="certification-card-content-items">
+                    <h3 class="certification-card-title">
+                      Devops and Software Development
+                    </h3>
+                    <p class="certification-card-desc">
+                      Docker • Jenkins • Cloud • CI/CD
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Restaurant Card 2 -->
+              <div class="certification-card">
+                <img
+                  src="public/certification_images/ml.jpg"
+                  ,
+                  class="certification-image"
+                  ,
+                  alt="img"
+                />
+                <div class="certification-card-content">
+                  <div class="certification-card-content-items">
+                    <h3 class="certification-card-title">
+                      Machine Learning and Data Science
+                    </h3>
+                    <p class="certification-card-desc">
+                      Python • EDA • Deep Learning
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Restaurant Card 3 -->
+              <div class="certification-card">
+                <img
+                  src="public/certification_images/IBMDesign20250425-26-kri5qv_page-0001.jpg"
+                  ,
+                  class="certification-image"
+                  ,
+                  alt="img"
+                />
+                <div class="certification-card-content">
+                  <div class="certification-card-content-items">
+                    <h3 class="certification-card-title">
+                      Artificial Intelligence
+                    </h3>
+                    <p class="certification-card-desc">
+                      Machine Learning • Generative AI
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section section--achievement" id="achievements">
+        <div class="section__inner">
+          <div class="block">
+            <a class="pre" href="#contact">Achievements</a>
+            <h2>
+              Rooted in strong fundamentals, growing through real-world
+              application.
+            </h2>
+          </div>
+        </div>
+
+        <!-- img holder -->
+        <div class="achievements-all">
+          <article class="achievement-holder">
+            <div class="images">
+              <div class="image-container parallax-horizontal-tb-bt">
+                <img
+                  src="./public/achievements_images/hackathrone.png"
+                  class="image"
+                  alt="Skin Disease Prediction Hackathon"
+                />
+              </div>
+            </div>
+
+            <div class="achievement-info-holder">
+              <h2 class="achievement-title">TabuQuest AI/ML Hackathon</h2>
+              <div class="achievement-dates">
+                <span class="achievement-date"
+                  ><strong>February 9-10, 2025</strong></span
+                >
+              </div>
+              <div class="achievement-description">
+                <div class="description-paragraph">
+                  Built an LLM-powered system for smart filtering and answering
+                  from tabular datasets at
+                  <strong>TabuQuest</strong>, an AI/ML hackathon, focusing on
+                  reducing data load and enhancing answer precision from CSV
+                  files.
+                </div>
+                <div class="description-list">
+                  <div class="list-item">
+                    <strong>Data Understanding:</strong> Implemented column-name
+                    semantic comparison to understand table structure without
+                    hardcoding.
+                  </div>
+                  <div class="list-item">
+                    <strong>Row Filtering:</strong> Designed an NLP-driven
+                    filtering pipeline using
+                    <strong>three vector strategies</strong> — date-based,
+                    ID-based, and keyword-based — to extract relevant rows.
+                  </div>
+                  <div class="list-item">
+                    <strong>RAG Pipeline:</strong> Developed a
+                    <strong>Retrieve-and-Generate model</strong>
+                    to answer natural language queries from filtered CSV data
+                    with
+                    <strong>80–90% accuracy</strong>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-holder">
+            <div class="images">
+              <div class="image-container parallax-horizontal-tb-bt">
+                <img
+                  src="./public/achievements_images/hackathrone1_page-0001.jpg"
+                  class="image"
+                  alt="Skin Disease Prediction Hackathon"
+                />
+              </div>
+            </div>
+
+            <div class="achievement-info-holder">
+              <!-- Your content remains unchanged -->
+              <h2 class="achievement-title">
+                Skin Disease Prediction Hackathon
+              </h2>
+              <div class="achievement-dates">
+                <span class="achievement-date"
+                  ><strong>August 28-29, 2024</strong></span
+                >
+              </div>
+              <div class="achievement-description">
+                <div class="description-paragraph">
+                  Built a skin disease prediction system and a symptom-based LLM
+                  during an open-topic hackathon by
+                  <strong>GeeksforGeeks</strong>, enabling users to input
+                  symptoms and receive disease details, effects, precautions,
+                  and medical domain recommendations.
+                </div>
+                <div class="description-list">
+                  <div class="list-item">
+                    <strong>Data Extraction:</strong> Scraped data from
+                    <strong>500+ diseases</strong> using
+                    <strong>BeautifulSoup</strong> for symptom, cause, effect,
+                    and prevention details.
+                  </div>
+                  <div class="list-item">
+                    <strong>Symptom Prediction:</strong> Designed a
+                    <strong>RAG-based model</strong> for accurate
+                    symptom-to-disease mapping.
+                  </div>
+                  <div class="list-item">
+                    <strong>Skin Disease Classification:</strong> Trained a
+                    <strong>ResNet-based model</strong> achieving high-accuracy
+                    skin disease detection from images.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="achievement-holder">
+            <div class="images">
+              <div class="image-container parallax-horizontal-tb-bt">
+                <img
+                  src="./public/achievements_images/Screenshot 2025-04-25 124642.png"
+                  class="image"
+                  alt="Skin Disease Prediction Hackathon"
+                />
+              </div>
+            </div>
+
+            <div class="achievement-info-holder">
+              <!-- Your content remains unchanged -->
+              <h2 class="achievement-title">
+                Skin Disease Prediction Hackathon
+              </h2>
+              <div class="achievement-dates">
+                <span class="achievement-date"
+                  ><strong>August 28-29, 2024</strong></span
+                >
+              </div>
+              <div class="achievement-description">
+                <div class="description-paragraph">
+                  Built a skin disease prediction system and a symptom-based LLM
+                  during an open-topic hackathon by
+                  <strong>GeeksforGeeks</strong>, enabling users to input
+                  symptoms and receive disease details, effects, precautions,
+                  and medical domain recommendations.
+                </div>
+                <div class="description-list">
+                  <div class="list-item">
+                    <strong>Data Extraction:</strong> Scraped data from
+                    <strong>500+ diseases</strong> using
+                    <strong>BeautifulSoup</strong> for symptom, cause, effect,
+                    and prevention details.
+                  </div>
+                  <div class="list-item">
+                    <strong>Symptom Prediction:</strong> Designed a
+                    <strong>RAG-based model</strong> for accurate
+                    symptom-to-disease mapping.
+                  </div>
+                  <div class="list-item">
+                    <strong>Skin Disease Classification:</strong> Trained a
+                    <strong>ResNet-based model</strong> achieving high-accuracy
+                    skin disease detection from images.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- holder -->
       </section>
 
       <section class="section section--contact" id="contact">
@@ -683,6 +1039,261 @@
           start: "top 80%",
           toggleActions: "play none none none",
         },
+      });
+    </script>
+    <script>
+      document
+        .getElementById("resume-download")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const button = this;
+
+          // Show loading state
+          button.classList.add("loading");
+
+          // Create hidden link for download
+          const link = document.createElement("a");
+          link.href = "public/resume-pdf/resume-1.pdf";
+          link.download = "Harmesh_Resume.pdf";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+
+          // Remove loading state after delay (simulate download time)
+          setTimeout(() => {
+            button.classList.remove("loading");
+          }, 2000);
+        });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if ("IntersectionObserver" in window) {
+          const lazyLoadObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  const cardImage = entry.target;
+                  const fullResUrl = cardImage.getAttribute("data-image-full");
+                  const imgElement = cardImage.querySelector("img");
+
+                  if (imgElement && fullResUrl) {
+                    imgElement.src = fullResUrl;
+                    imgElement.onload = function () {
+                      cardImage.classList.add("is-loaded");
+                    };
+
+                    lazyLoadObserver.unobserve(cardImage);
+                  }
+                }
+              });
+            },
+            {
+              rootMargin: "200px",
+              threshold: 0.01,
+            }
+          );
+
+          document
+            .querySelectorAll(".project-card-image")
+            .forEach((cardImage) => {
+              lazyLoadObserver.observe(cardImage);
+            });
+        } else {
+          // Fallback
+          setTimeout(function () {
+            lazyLoadFallback();
+          }, 1000);
+        }
+      });
+    </script>
+    <script>
+      const lazyLoadObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            console.log(entry); // Debugging line
+            if (entry.isIntersecting) {
+              const cardImage = entry.target;
+              const fullResUrl = cardImage.getAttribute("data-image-full");
+              const imgElement = cardImage.querySelector("img");
+
+              if (imgElement && fullResUrl) {
+                console.log("Loading full image:", fullResUrl); // Debugging line
+                imgElement.src = fullResUrl;
+
+                imgElement.onload = function () {
+                  cardImage.classList.add("is-loaded");
+                };
+
+                lazyLoadObserver.unobserve(cardImage);
+              }
+            }
+          });
+        },
+        {
+          rootMargin: "200px", // Load images 200px before they come into view
+          threshold: 0.01,
+        }
+      );
+    </script>
+    <script>
+      class PortfolioNavigation {
+        constructor() {
+          this.navItems = document.querySelectorAll(".projectsLi");
+          this.homePage = document.querySelector(".home-page");
+          this.isAnimating = false;
+
+          this.init();
+          this.setupHomeObserver();
+        }
+
+        init() {
+          this.homePage.classList.add("intro");
+          setTimeout(() => {
+            this.homePage.classList.remove("intro");
+          }, 2000);
+
+          this.setupEventListeners();
+        }
+
+        setupEventListeners() {
+          this.navItems.forEach((item) => {
+            item.addEventListener("click", (e) => {
+              e.preventDefault();
+              if (this.isAnimating) return;
+              this.handleItemClick(item);
+            });
+
+            item.addEventListener("mouseenter", () => {
+              if (!item.classList.contains("isSelected")) {
+                item.classList.add("isHovered");
+              }
+            });
+
+            item.addEventListener("mouseleave", () => {
+              item.classList.remove("isHovered");
+            });
+          });
+        }
+
+        setupHomeObserver() {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  this.resetNavigation();
+                }
+              });
+            },
+            { threshold: 0.5 }
+          );
+
+          observer.observe(this.homePage);
+        }
+
+        resetNavigation() {
+          this.navItems.forEach((item) => {
+            item.classList.remove("isSelected", "isHovered");
+          });
+        }
+
+        handleItemClick(clickedItem) {
+          this.isAnimating = true;
+
+          // Reset all nav items first
+          this.resetNavigation();
+
+          // Set clicked item as selected
+          clickedItem.classList.add("isSelected");
+
+          // Animation sequence
+          this.homePage.classList.add("outro");
+
+          setTimeout(() => {
+            document
+              .getElementById(clickedItem.dataset.section)
+              .scrollIntoView({
+                behavior: "smooth",
+              });
+
+            setTimeout(() => {
+              this.homePage.classList.remove("outro");
+              this.isAnimating = false;
+            }, 1000);
+          }, 1500);
+        }
+      }
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", () => {
+        new PortfolioNavigation();
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imageContainers = document.querySelectorAll(".images");
+        let ticking = false;
+        const parallaxIntensity = 0.3; // Increased intensity for more movement
+
+        function updateParallax() {
+          const scrollY = window.pageYOffset;
+          const windowHeight = window.innerHeight;
+
+          imageContainers.forEach((container) => {
+            const rect = container.getBoundingClientRect();
+            const containerCenter = rect.top + scrollY + rect.height / 2;
+            const viewportCenter = scrollY + windowHeight / 2;
+            const distance = (containerCenter - viewportCenter) / windowHeight;
+
+            // Calculate movement (increased range)
+            const isEven = container
+              .closest(".achievement-holder")
+              .matches(":nth-child(even)");
+            const offsetRange = isEven ? 150 : -150; // Increased from ±100 to ±150
+            const offset = distance * offsetRange * parallaxIntensity;
+
+            container.style.transform = `translateX(${offset}px)`;
+
+            // Optional: Add slight scale effect
+            const scale = 1 + Math.abs(distance * 0.1);
+            container.querySelector("img").style.transform = `scale(${scale})`;
+          });
+
+          ticking = false;
+        }
+
+        function onScroll() {
+          if (!ticking) {
+            window.requestAnimationFrame(updateParallax);
+            ticking = true;
+          }
+        }
+
+        // Initialize with Intersection Observer for performance
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                window.addEventListener("scroll", onScroll, { passive: true });
+              } else {
+                window.removeEventListener("scroll", onScroll);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        document.querySelectorAll(".achievement-holder").forEach((holder) => {
+          observer.observe(holder);
+        });
+
+        window.addEventListener("resize", onScroll, { passive: true });
+      });
+    </script>
+    <script>
+      const toggleButton = document.getElementById("themeToggle");
+
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
       });
     </script>
   </body>
