@@ -117,13 +117,18 @@
         <div class="section__inner">
           <div class="block">
             <a class="pre" href="#about">ABOUT ME</a>
-
-            <h2 class="animated-heading">
-              Hello, I'm Harmesh,<br />
-              a college student with <br />
-              a strong interest in technology and<br />
-              a problem-solving mindset
-            </h2>
+            <div class="heading-with-image">
+              <h2 class="animated-heading">
+                Hello, I'm Harmesh,<br />
+                a college student with <br />
+                a strong interest<br />
+                in technology and<br />
+                a problem-solving mindset
+              </h2>
+              <div class="profile-pic-inline">
+                <img src="./public/profie-pic.jpg" alt="Profile picture" />
+              </div>
+            </div>
             <p class="lead">
               See small bits of my project works on
               <a href="https://github.com/harmeshgv" class="link">Github</a>,
@@ -491,14 +496,16 @@
 
             <!-- Project 2 -->
             <li class="project-card permanent-inset">
-              <div class="project-card-image">
-                <video width="640" height="360" controls autoplay loop muted>
-                  <source
-                    src="./public/project_images/vvv.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+              <div
+                class="project-card-image"
+                data-image-full="./public/project_images/violence.png"
+              >
+                <img
+                  src="./public/project_images/violence.png"
+                  loading="lazy"
+                  alt="Grocery Basket Project"
+                  height="300px"
+                />
               </div>
               <div class="project-card-description">
                 <div class="project-title">Video Classification Project</div>

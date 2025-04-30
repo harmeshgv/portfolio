@@ -962,6 +962,7 @@ p a:hover {
   }
 }
 
+
 .timeline-container {
   width: 100%;
   position: relative;
@@ -1669,6 +1670,23 @@ background-color: var(--button-bg);
   will-change: transform;
 }
 
+.heading-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
+.animated-heading {
+  flex: 1;
+  min-width: 300px;
+}
 
-
+.profile-pic-inline img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  padding-bottom: 80px;
+}
