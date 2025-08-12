@@ -46,7 +46,7 @@ const experienceItems: ExperienceItem[] = [
 
 const Experience: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [active, setActive] = useState(false);
+  const [_active, _setActive] = useState(false);
 
   useEffect(() => {
     const container = containerRef.current;

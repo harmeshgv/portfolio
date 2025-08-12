@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
       <div className="hero-image">
-        <img src={heroImage} alt="Profile picture" />
+        <img src={heroImage} alt="Harmesh - Profile picture" />
       </div>
     </section>
   );
