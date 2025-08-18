@@ -5,7 +5,7 @@ import Projects from './pages/Projects';
 
 const App: React.FC = () => {
   return (
-    <Router basename="/my-portfolio">
+    <Router basename="/portfolio">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<Projects />} />
